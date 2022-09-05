@@ -105,7 +105,7 @@ export async function activate(context: vscode.ExtensionContext) {
             .map((k, i) => (i === e.message.length && k === "." ? "" : k))
             .join("")} on line ${e.range.start.line}`
       )
-      .join(" and ")}. You should really fix that?`;
+      .join(" and ")}. You should really fix that!`;
 
     //@ts-ignore
     const img = clippy.webview.asWebviewUri(onDiskPath);
